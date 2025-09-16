@@ -1,0 +1,243 @@
+:root{
+    --my-fuccia : #DF02A1;
+    --my-lighter-fuccia : #FF38BF;
+    --my-blue : #286FFE;
+    --my-light-blue : #00E4FF;
+    --my-lighter-blue : #13DEF2;
+    --my-purple : #CF7DED;
+
+    --logo-c-sharp: #a179dc;
+    --logo-c-sharp-border: #280068;
+    --logo-cpp: #5c8dbc;
+    --logo-cpp-border: #1a4674;
+    --logo-js: #ffde25;
+    --logo-js-border: #e9ca32;
+    --logo-css: #1c88c7;
+    --logo-css-border: #1b73ba;
+    --logo-html: #ef652a;
+    --logo-html-border: #e34f26;
+    --logo-python: #ffcd3d;
+    --logo-python-border: #3776aa;
+    --logo-java: #4c89a7;
+    --logo-java-border: #e66f00;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--my-fuccia);
+    align-items: center;
+}
+
+
+
+.header-section{
+    display: flex;
+    gap: 2.5vw;
+
+    margin : 15px 15px 0px 15px;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px 15px 0px 0px;
+    background-color: black;
+
+}
+
+.header-logo{
+    width: 6%;
+    height: auto;
+    margin-right: auto;
+}
+
+.header-link{
+    color: white;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+#link-3{
+    margin-right: 2vw;
+}
+.hero-section{
+    display: flex;
+    margin: 0px 15px 15px 15px;
+    justify-content: center;
+    align-items: center;
+}
+.initial-section{
+    width: 90%;
+}
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: black;
+
+    padding: 10% 0;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.hero-img{
+    width: 40%;
+    height: auto;
+
+    margin: 0 5%;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    gap: 10px;
+}
+
+.hero-title, .hero-description, .hero-button{
+    font-family: Roboto;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom: auto;
+}
+.hero-title{
+    color: var(--my-purple);
+    font-size: 2.7vw;
+    font-weight: bolder;
+}
+
+.hero-description{
+    font-size: 1.5vw;
+    color: white;
+}
+
+.hero-button{
+    background-color: var(--my-blue);
+    color: white;
+    padding: 1.2vw;
+    font-size: 1vw;
+
+    border-radius: 2vw;
+    flex: 0 0 auto;
+}
+
+.color-gradient{
+    background-image: linear-gradient(to bottom, var(--my-fuccia), black);
+    width: 100vw;
+    height: 5vw;
+}
+
+.info-section{
+    width: 100vw;
+    padding: 2vw 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cards-container{
+    background-color: var(--my-light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 0 5vw 5vw 5vw;
+    border-radius: 0 0 15px 15px;
+    align-content: flex-end;
+}
+
+.info-title{
+    background-color: var(--my-light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Roboto;
+    padding: 2vw;
+    font-weight: bolder;
+    margin: 2vw 5vw 0 5vw;
+    width: 90%;
+    border-radius: 15px 15px 0 0;
+    color: white;
+    font-size: 3vw;
+}
+
+.card-container{
+    flex: 0 1 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo-image{
+    width: 9vw;
+    height: auto;
+}
+
+.card-text{
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    padding: 1vw;
+    font-family: Roboto;
+}
+
+div:has(> #python-logo){
+    border: 0.5vw solid var(--logo-python-border);
+    border-radius: 2vw;
+}
+
+div:has(> #html-logo){
+    background-color: var(--logo-html);
+    border: 0.5vw solid var(--logo-html-border);
+    border-radius: 2vw;
+}
+
+div:has(> #css-logo){
+    background-color: var(--logo-css);
+    border: 0.5vw solid var(--logo-css-border);
+    border-radius: 2vw;
+}
+
+div:has(> #javascript-logo){
+    background-color: var(--logo-js);
+    border: 0.5vw solid var(--logo-js-border);
+    border-radius: 2vw;
+}
+
+div:has(> #cpp-logo){
+    border: 0.5vw solid var(--logo-cpp-border);
+    border-radius: 2vw;
+}
+
+div:has(> #csharp-logo){
+    border: 0.5vw solid var(--logo-c-sharp-border);
+    border-radius: 2vw;
+}
+
+div:has(> #java-logo){
+    border: 0.5vw solid var(--logo-java-border);
+    border-radius: 2vw;
+}
+
+
+
+
