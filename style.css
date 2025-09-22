@@ -135,12 +135,23 @@ body{
 
 }
 
-.color-gradient{
+#color-gradient1{
     background-image: linear-gradient(to bottom, var(--my-fuccia), black);
     width: 100vw;
     height: 5vw;
 }
 
+#color-gradient2{
+    background-image: linear-gradient(to bottom, black, var(--my-light-blue));
+    width: 100vw;
+    height: 10vw;
+}
+
+#color-gradient3{
+    background-image: linear-gradient(to bottom, var(--my-light-blue), var(--my-fuccia));
+    width: 100vw;
+    height: 10vw;
+}
 .info-section{
     width: 100vw;
     padding: 2vw 0;
@@ -181,11 +192,11 @@ body{
 
 .card-container{
     flex: 0 1 300px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
+
 }
 
 .logo-image{
@@ -238,6 +249,44 @@ div:has(> #java-logo){
     border: 0.5vw solid var(--logo-java-border);
     border-radius: 2vw;
 }
+
+.quote-section{
+    width: 100vw;
+    background-color: var(--my-light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 15vw 5vw 15vw 5vw;
+}
+
+.quote-text{
+    color: white;
+    font-size: 3vw;
+    font-family: Roboto;
+    font-style: italic;
+
+    padding: 1vw 15vw;
+    text-align: justify;
+}
+
+.quote-source{
+    color: white;
+    font-size: 2vw;
+    font-family: Roboto;
+    font-weight: bold;
+
+    padding: 1vw 15vw;
+    margin-left: auto;
+}
+
 
 
 
