@@ -287,6 +287,71 @@ div:has(> #java-logo){
     margin-left: auto;
 }
 
+.cta-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-container{
+    margin: 15vw 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 90vw;
+    height: 20vw;
+
+    background-color: black;
+    border-radius: 0.5vw;
+}
+
+.cta-button-container{
+    flex: 1 3 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cta-button{
+    color: white;
+    border: 0.10vw solid white;
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+    font-family: Roboto;
+}
+
+.cta-text-container{
+    flex: 3 1 0 ;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto
+}
+
+.cta-text-title{
+    color: var(--my-lighter-blue);
+    font-size: 3vw;
+    font-weight: bolder;
+}
+
+.footer-section{
+    width: 100vw;
+    height: 10vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: Roboto;
+    font-style: italic;
+
+}
+
+
+
 
 
 
